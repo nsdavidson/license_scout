@@ -322,8 +322,7 @@ module LicenseScout
         ["slack-notifier", "MIT", ["https://raw.githubusercontent.com/stevenosloan/slack-notifier/master/LICENSE"]],
         ["parslet", "MIT", ["https://raw.githubusercontent.com/kschiess/parslet/master/LICENSE"]],
         ["blankslate", "MIT", ["https://raw.githubusercontent.com/masover/blankslate/master/MIT-LICENSE"]],
-        ["xml-simple", "Ruby", ["https://raw.githubusercontent.com/maik/xml-simple/master/README.md"]],
-        ["ignore", "MIT", ["https://raw.githubusercontent.com/kaelzhang/node-ignore/master/LICENSE-MIT"]]
+        ["xml-simple", "Ruby", ["https://raw.githubusercontent.com/maik/xml-simple/master/README.md"]]
       ]
       (aws_sdk_gems + other_gems).each do |override_data|
         override_license "ruby_bundler", override_data[0] do |version|
@@ -827,6 +826,7 @@ module LicenseScout
         ["performance-now", "MIT", ["https://raw.githubusercontent.com/braveg1rl/performance-now/master/license.txt"]],
         ["cli-table", "MIT", ["README.md"]],
         ["process", "MIT", ["https://raw.githubusercontent.com/defunctzombie/node-process/master/LICENSE"]],
+        ["ignore", "MIT", ["https://raw.githubusercontent.com/kaelzhang/node-ignore/master/LICENSE-MIT"]]
       ].each do |override_data|
         override_license "js_npm", override_data[0] do |version|
           {}.tap do |d|
